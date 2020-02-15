@@ -42,9 +42,7 @@ int main() {
 	double bills[100];
 	string names[100];
 
-
 	do{
-
 		int number = takeInput();
 		switch (number)
 		{
@@ -58,7 +56,6 @@ int main() {
 			cin >> names[num];
 			cout << endl;
 			num++;
-
 			break;
 		case 3:
 			break;
@@ -67,6 +64,5 @@ int main() {
 		}
 	} while (true);
 	
-
 	return 0;
 }

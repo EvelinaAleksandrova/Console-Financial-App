@@ -4,7 +4,5 @@
 const int NUMBER_OF_COMMANDS = 3;
 void showMenu();
 
-
-
 #endif 
 
