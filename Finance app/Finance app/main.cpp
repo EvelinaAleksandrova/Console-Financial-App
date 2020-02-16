@@ -74,13 +74,10 @@ int main() {
 		case 3:
 			moneySpendOn(bills, num,names);
 			break;
-		case 4:
-			
-			break;
 		default:
 			break;
 		}
-	} while (number < 4);
+	} while (number < NUMBER_OF_COMMANDS);
 	
 	return 0;
 }
