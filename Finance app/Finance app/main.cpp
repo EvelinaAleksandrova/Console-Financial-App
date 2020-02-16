@@ -74,6 +74,7 @@ int main() {
 			moneySpendOn(bills, num,names);
 			break;
 		case 4:
+			return false;
 			break;
 		default:
 			break;
