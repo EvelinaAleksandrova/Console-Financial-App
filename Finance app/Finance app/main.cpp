@@ -54,9 +54,10 @@ int main() {
 	showMenu();
 	double bills[100];
 	string names[100];
+	int number = 0;
 
 	do{
-		int number = takeInput();
+	  number = takeInput();
 		switch (number)
 		{
 		case 1:
@@ -74,12 +75,12 @@ int main() {
 			moneySpendOn(bills, num,names);
 			break;
 		case 4:
-			return false;
+			
 			break;
 		default:
 			break;
 		}
-	} while (true);
+	} while (number < 4);
 	
 	return 0;
 }
