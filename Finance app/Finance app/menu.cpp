@@ -6,6 +6,7 @@ void showMenu()
 {
 	cout << "1.Show total expenses: " << endl;
 	cout << "2.Add expense <Price> <Name>" << endl;
-	cout << "3.Exit" << endl;
+	cout << "3.Money spend on: " << endl;
+	cout << "4.Exit.." << endl;
 	
 }

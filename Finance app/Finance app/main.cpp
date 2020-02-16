@@ -17,7 +17,7 @@ int takeInput() {
 	int number;
 
 	do {
-		cout << "Choose number of menu: " << endl;
+		cout << endl << "Choose number of menu: " << endl;
 		cin >> number;
 	} while (isValid(number) == false);
 
@@ -33,6 +33,19 @@ void outputExpenses(double *bills,int count) {
 		totalPrice += bills[i];
 	}
 	cout << totalPrice << endl;
+}
+void moneySpendOn(double *bills,int count,string *names) {
+
+	double moneySpendOn = 0.0;
+
+	for (int i = 0; i < count; i++)
+	{
+			cout << names[i]<<" - $";
+			cout << bills[i] << endl;
+			moneySpendOn += bills[i];
+	}
+	cout << "Total items: " << count <<" with total expenses $" << moneySpendOn<<endl;
+	
 }
 
 int main() {
@@ -58,6 +71,9 @@ int main() {
 			num++;
 			break;
 		case 3:
+			moneySpendOn(bills, num,names);
+			break;
+		case 4:
 			break;
 		default:
 			break;
